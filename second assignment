@@ -1,0 +1,10 @@
+def even(start, n):
+    evlst = []
+    for _ in range(n):
+        if start % 2 == 0:
+            evlst.append(start)
+            start = start + 2
+        else:
+            evlst.append(start + 1)
+            start = start + 2
+    return evlst
